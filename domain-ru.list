@@ -144,7 +144,7 @@ DOMAIN-SUFFIX,vrn.ru
 DOMAIN-SUFFIX,vyatka.ru
 DOMAIN-SUFFIX,yaroslavl.ru
 DOMAIN-SUFFIX,yuzhno-sakhalinsk.ru
-DOMAIN-SUFFIX,chukotka.ru     # Chukotka Autonomous Area
-DOMAIN-SUFFIX,jamal.ru        # Yamal-Nenets Autonomous Area
-DOMAIN-SUFFIX,surgut.ru       # Khanty-Mansi Autonomous Area – Yugra
-DOMAIN-SUFFIX,yamal.ru        # Yamal-Nenets Autonomous Area
+DOMAIN-SUFFIX,chukotka.ru
+DOMAIN-SUFFIX,jamal.ru
+DOMAIN-SUFFIX,surgut.ru
+DOMAIN-SUFFIX,yamal.ru
