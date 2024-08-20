@@ -1,20 +1,13 @@
 # Блокировка рекламы
-      // Настройка черного списка
-      {
-        "inboundTag": ["redirect", "tproxy"],
-        "outboundTag": "block",
-        "type": "field",
-        "domain": [
-          "ext:geosite_v2fly.dat:category-ads-all",
-          "google-analytics",
-          "domain:pagead2.googlesyndication.com",
-          "domain:googleads.g.doubleclick.net",
-          "domain:ad.adriver.ru",
-          "domain:pink.habralab.ru",
-          "domain:www.google–analytics.com",
-          "domain:ssl.google–analytics.com",
-          "analytics.yandex",
-          "appcenter.ms",
-          "app-measurement.com",
-firebase.io",
-crashlytics.com"
+DOMAIN-SUFFIX,google-analytics
+DOMAIN-SUFFIX,pagead2.googlesyndication.com
+DOMAIN-SUFFIX,googleads.g.doubleclick.net
+DOMAIN-SUFFIX,ad.adriver.ru
+DOMAIN-SUFFIX,pink.habralab.ru
+DOMAIN-SUFFIX,www.google–analytics.com
+DOMAIN-SUFFIX,ssl.google–analytics.com
+analytics.yandex
+appcenter.ms
+app-measurement.com
+firebase.io
+crashlytics.com
