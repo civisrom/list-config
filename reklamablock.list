@@ -6,8 +6,8 @@ DOMAIN-SUFFIX,ad.adriver.ru
 DOMAIN-SUFFIX,pink.habralab.ru
 DOMAIN-SUFFIX,www.google–analytics.com
 DOMAIN-SUFFIX,ssl.google–analytics.com
-analytics.yandex
-appcenter.ms
-app-measurement.com
-firebase.io
-crashlytics.com
+DOMAIN-KEYWORD,analytics.yandex
+DOMAIN-SUFFIX,appcenter.ms
+aDOMAIN-SUFFIX,pp-measurement.com
+DOMAIN-SUFFIX,firebase.io
+DOMAIN-SUFFIX,rashlytics.com
