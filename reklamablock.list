@@ -1,5 +1,5 @@
 # Блокировка рекламы
-DOMAIN-SUFFIX,google-analytics
+DOMAIN-KEYWORD,google-analytics
 DOMAIN-SUFFIX,pagead2.googlesyndication.com
 DOMAIN-SUFFIX,googleads.g.doubleclick.net
 DOMAIN-SUFFIX,ad.adriver.ru
