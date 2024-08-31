@@ -23,7 +23,6 @@ DOMAIN-SUFFIX,.pp.ru
 DOMAIN-SUFFIX,.net.ru
 DOMAIN-SUFFIX,.org.ru
 DOMAIN-KEYWORD,vk
-DOMAIN-KEYWORD,whatsapp
 DOMAIN-KEYWORD,yandex
 DOMAIN-KEYWORD,ya
 DOMAIN-SUFFIX,yandexcloud.net
@@ -169,6 +168,49 @@ DOMAIN-SUFFIX,vkuservideo.com
 DOMAIN-SUFFIX,vkuservideo.net
 # Whatsapp
 DOMAIN-KEYWORD,whatsapp
+DOMAIN-KEYWORD,include:whatsapp-ads
+DOMAIN-SUFFIX,wa.me
+DOMAIN-SUFFIX,whatsapp-plus.info
+DOMAIN-SUFFIX,whatsapp-plus.me
+DOMAIN-SUFFIX,whatsapp-plus.net
+DOMAIN-SUFFIX,whatsapp.cc
+DOMAIN-SUFFIX,whatsapp.com
+DOMAIN-SUFFIX,whatsapp.info
+DOMAIN-SUFFIX,whatsapp.net
+DOMAIN-SUFFIX,whatsapp.org
+DOMAIN-SUFFIX,whatsapp.tv
+DOMAIN-SUFFIX,whatsappbrand.com
+# telegram
+DOMAIN-SUFFIX,cdn-telegram.org
+DOMAIN-SUFFIX,comments.app
+DOMAIN-SUFFIX,contest.com
+DOMAIN-SUFFIX,fragment.com
+DOMAIN-SUFFIX,graph.org
+DOMAIN-SUFFIX,quiz.directory
+DOMAIN-SUFFIX,t.me
+DOMAIN-SUFFIX,tdesktop.com
+DOMAIN-SUFFIX,telega.one
+DOMAIN-SUFFIX,telegra.ph
+DOMAIN-SUFFIX,telegram-cdn.org
+DOMAIN-SUFFIX,telegram.dog
+DOMAIN-SUFFIX,telegram.me
+DOMAIN-SUFFIX,telegram.org
+DOMAIN-SUFFIX,telegram.space
+DOMAIN-SUFFIX,telesco.pe
+DOMAIN-SUFFIX,tg.dev
+DOMAIN-SUFFIX,tx.me
+# viber
+DOMAIN-SUFFIX,r10s.com
+DOMAIN-SUFFIX,r10s.jp
+DOMAIN-SUFFIX,rakuten-static.com
+DOMAIN-SUFFIX,rakuten.ca
+DOMAIN-SUFFIX,rakuten.co.jp
+DOMAIN-SUFFIX,rakuten.com
+DOMAIN-SUFFIX,rakuten.com.tw
+DOMAIN-SUFFIX,rakuten.ne.jp
+DOMAIN-SUFFIX,rakuten.tw
+DOMAIN-SUFFIX,rclon.com
+DOMAIN-SUFFIX,rebates.jp
 # apple
 DOMAIN-KEYWORD,apple-ads
 DOMAIN-KEYWORD,apple-dev
