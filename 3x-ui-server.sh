@@ -435,28 +435,6 @@ EOF
 	echo ""
 }
 
-### СЕРТИФИКАТЫ ###
-issuance_of_certificates() {
-    echo -e "${blue}Выдача сертификатов${clear}"
-
-    # Получение сертификатов с помощью Certbot через HTTP-01 challenge
-    certbot certonly \
-        --webroot \
-        --webroot-path /var/www/html \
-        -d ${domain} \
-        -d *.${domain} \
-        --agree-tos \
-        -m ${email} \
-        --no-eff-email \
-        --non-interactive
-
-    # Установка автоматического продления сертификатов
-    { crontab -l; echo "0 0 1 */2 * certbot renew --quiet --deploy-hook 'systemctl reload nginx'"; } | crontab -
-
-    echo "renew_hook = systemctl reload nginx" >> /etc/letsencrypt/renewal/${domain}.conf
-    echo ""
-}
-
 ### NGINX ###
 nginx_setup() {
 	echo -e "${blue}Настройка NGINX${clear}"
