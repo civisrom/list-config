@@ -194,11 +194,9 @@ data_entry() {
 installation_of_utilities() {
 	msg_inf "Обновление системы и установка необходимых пакетов"
 	apt-get update && apt-get upgrade -y
-	apt-get install -y gnupg2
-	curl -fsSL https://pkg.cloudflareclient.com/pubkey.gpg | gpg --yes --dearmor --output /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg
-	echo "deb [signed-by=/usr/share/keyrings/cloudflare-warp-archive-keyring.gpg] https://pkg.cloudflareclient.com/ $(lsb_release -cs) main" | tee /etc/apt/sources.list.d/cloudflare-client.list	
+	apt-get install -y gnupg2	
 	apt-get update && apt-get upgrade -y
-	apt-get install -y git wget sudo nginx-full net-tools apache2-utils gnupg2 sqlite3 curl ufw certbot python3-certbot-dns-cloudflare unattended-upgrades cloudflare-warp systemd-resolved
+	apt-get install -y git wget sudo nginx-full net-tools apache2-utils gnupg2 sqlite3 curl ufw certbot unattended-upgrades
 	msg_tilda "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 	echo
 }
@@ -466,105 +464,6 @@ os:
 schema_version: 28
 EOF
 	AdGuardHome/AdGuardHome -s restart
-}
-
-### Добавление пользователя ###
-add_user() {
- 	msg_inf "Добавление пользователя"
-	useradd -m -s $(which bash) -G sudo ${username}
-	echo "${username}:${password}" | chpasswd
-	mkdir -p /home/${username}/.ssh/
-	touch /home/${username}/.ssh/authorized_keys
-	chown ${username}: /home/${username}/.ssh
-	chmod 700 /home/${username}/.ssh
-	chown ${username}:${username} /home/${username}/.ssh/authorized_keys
-	echo ${username}
-	msg_tilda "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-	echo
-}
-
-### Безопасность ###
-uattended_upgrade() {
-	msg_inf "Автоматическое обновление безопасности"
-	echo 'Unattended-Upgrade::Mail "root";' >> /etc/apt/apt.conf.d/50unattended-upgrades
-	echo unattended-upgrades unattended-upgrades/enable_auto_updates boolean true | debconf-set-selections
-	dpkg-reconfigure -f noninteractive unattended-upgrades
-	systemctl restart unattended-upgrades
-	msg_tilda "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-	echo
-}
-
-### BBR ###
-enable_bbr() {
-	msg_inf "Включение BBR"
-	if [[ ! "$(sysctl net.core.default_qdisc)" == *"= fq" ]]
-	then
-	    echo "net.core.default_qdisc = fq" >> /etc/sysctl.conf
-	fi
-	if [[ ! "$(sysctl net.ipv4.tcp_congestion_control)" == *"bbr" ]]
-	then
-	    echo "net.ipv4.tcp_congestion_control = bbr" >> /etc/sysctl.conf
-	fi
-	msg_tilda "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-}
-
-### Отключение IPv6 ###
-disable_ipv6() {
-	msg_inf "Отключение IPv6"
-	interface_name=$(ifconfig -s | awk 'NR==2 {print $1}')
-	if [[ ! "$(sysctl net.ipv6.conf.all.disable_ipv6)" == *"= 1" ]]
-	then
-	        echo "net.ipv6.conf.all.disable_ipv6 = 1" >> /etc/sysctl.conf
-	fi
-	if [[ ! "$(sysctl net.ipv6.conf.default.disable_ipv6)" == *"= 1" ]]
-	then
-	        echo "net.ipv6.conf.default.disable_ipv6 = 1" >> /etc/sysctl.conf
-	fi
-	if [[ ! "$(sysctl net.ipv6.conf.lo.disable_ipv6)" == *"= 1" ]]
-	then
-	        echo "net.ipv6.conf.lo.disable_ipv6 = 1" >> /etc/sysctl.conf
-	fi
-	if [[ ! "$(sysctl net.ipv6.conf.$interface_name.disable_ipv6)" == *"= 1" ]]
-	then
-	        echo "net.ipv6.conf.$interface_name.disable_ipv6 = 1" >> /etc/sysctl.conf
-	fi
-	sysctl -p
-	msg_tilda "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-	echo
-}
-
-### WARP ###
-warp() {
-	msg_inf "Настройка warp"
-	yes | warp-cli registration new
-	warp-cli mode proxy
-	warp-cli connect
-    if [[ -n "$key" ]];
-	then
-		warp-cli registration license ${warpkey}
-	fi
-	msg_tilda "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-	echo
-}
-
-### СЕРТИФИКАТЫ ###
-issuance_of_certificates() {
-	msg_inf "Выдача сертификатов"
-	touch cloudflare.credentials
-	chown root:root cloudflare.credentials
-	chmod 600 cloudflare.credentials
-	if [[ "$cftoken" =~ [A-Z] ]]
-	then
-	    echo "dns_cloudflare_api_token = ${cftoken}" >> /root/cloudflare.credentials
-	else
-	    echo "dns_cloudflare_email = ${email}" >> /root/cloudflare.credentials
-	    echo "dns_cloudflare_api_key = ${cftoken}" >> /root/cloudflare.credentials
-	fi
-	certbot certonly --dns-cloudflare --dns-cloudflare-credentials /root/cloudflare.credentials --dns-cloudflare-propagation-seconds 30 --rsa-key-size 4096 -d ${domain},*.${domain} --agree-tos -m ${email} --no-eff-email --non-interactive
-	{ crontab -l; echo "0 0 1 */2 * certbot -q renew"; } | crontab -
-	echo "renew_hook = systemctl reload nginx" >> /etc/letsencrypt/renewal/${domain}.conf
-	msg_tilda "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
-	echo
 }
 
 ### NGINX ###
