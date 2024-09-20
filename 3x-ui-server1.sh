@@ -188,6 +188,18 @@ data_entry() {
 	webKeyFile=/etc/letsencrypt/live/${domain}/privkey.pem
 	subURI=https://${domain}/${subPath}/
 	subJsonURI=https://${domain}/${subJsonPath}/
+}
+
+### Обновление системы и установка пакетов ###
+installation_of_utilities() {
+	msg_inf "Обновление системы и установка необходимых пакетов"
+	apt-get update && apt-get upgrade -y
+	apt-get install -y gnupg2
+	apt-get update && apt-get upgrade -y
+	apt-get install -y net-tools gnupg2 sqlite3
+	msg_tilda "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+	echo
+}
 
 ### DoH, DoT ###
 dns_encryption() {
