@@ -196,7 +196,7 @@ installation_of_utilities() {
 	apt-get update && apt-get upgrade -y
 	apt-get install -y gnupg2	
 	apt-get update && apt-get upgrade -y
-	apt-get install -y git wget sudo nginx-full net-tools apache2-utils gnupg2 sqlite3 curl ufw certbot unattended-upgrades
+	apt-get install -y net-tools apache2-utils gnupg2 sqlite3 unattended-upgrades tilda
 	msg_tilda "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
 	echo
 }
