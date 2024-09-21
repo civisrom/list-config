@@ -270,6 +270,7 @@ EOF
 }
 
 dns_adguard_home() {
+        rm -rf AdGuardHome_*
 	wget https://static.adguard.com/adguardhome/release/AdGuardHome_linux_amd64.tar.gz
 	tar xvf AdGuardHome_linux_amd64.tar.gz
 	AdGuardHome/AdGuardHome -s install
