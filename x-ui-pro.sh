@@ -12,7 +12,7 @@ msg_inf		 ' /\    |_| _|_   |   | \ \_/ '	; echo
 XUIDB="/etc/x-ui/x-ui.db";domain="";UNINSTALL="x";INSTALL="n";PNLNUM=1;CFALLOW="n"
 Pak=$(type apt &>/dev/null && echo "apt" || echo "yum")
 ##################################Random Port and Path #################################################
-RNDSTR=$(tr -dc A-Za-z0-9 </dev/urandom | head -c "$(shuf -i 12-20 -n 1)")
+RNDSTR=$(tr -dc A-Za-z0-9 </dev/urandom | head -c "$(shuf -i 20-30 -n 1)")
 while true; do 
     PORT=$(( ((RANDOM<<15)|RANDOM) % 49152 + 10000 ))
     status="$(nc -z 127.0.0.1 $PORT < /dev/null &>/dev/null; echo $?)"
