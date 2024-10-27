@@ -1,5 +1,8 @@
 DOMAIN-SUFFIX,.ru
 DOMAIN-KEYWORD,ozonusercontent
+DOMAIN-KEYWORD,buzzoola
+DOMAIN-KEYWORD,watsen
+DOMAIN-KEYWORD,watersensor
 DOMAIN-KEYWORD,ozon
 DOMAIN-KEYWORD,wildberries
 DOMAIN-KEYWORD,sslip
@@ -907,3 +910,4 @@ DOMAIN-SUFFIX,www-sms-apple.com
 DOMAIN-SUFFIX,wwwapple.com
 DOMAIN-SUFFIX,wwwapple.net
 DOMAIN-SUFFIX,wwwlapple.com
+DOMAIN-KEYWORD,avito
