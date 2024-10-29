@@ -191,6 +191,7 @@ DOMAIN-SUFFIX,whatsapp.tv
 DOMAIN-SUFFIX,whatsappbrand.com
 # telegram
 DOMAIN-SUFFIX,cdn-telegram.org
+DOMAIN-KEYWORD,telegram
 DOMAIN-SUFFIX,comments.app
 DOMAIN-SUFFIX,contest.com
 DOMAIN-SUFFIX,fragment.com
