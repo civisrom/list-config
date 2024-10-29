@@ -215,6 +215,6 @@ DOMAIN-SUFFIX,yt.be
 DOMAIN-SUFFIX,ytimg.com
 DOMAIN-KEYWORD,youtube
 # test services
-DOMAIN-KEYWORD,msftncsi
-DOMAIN-SUFFIX,lencr.org
-DOMAIN-KEYWORD,lencr
+#DOMAIN-KEYWORD,msftncsi
+#DOMAIN-SUFFIX,lencr.org
+#DOMAIN-KEYWORD,lencr
