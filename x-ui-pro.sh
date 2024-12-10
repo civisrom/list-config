@@ -81,7 +81,7 @@ fi
 ###############################Install Packages#########################################################
 if [[ ${INSTALL} == *"y"* ]]; then
 	$Pak -y update
-	$Pak -y install curl nginx-full certbot python3-certbot-nginx sqlite3 
+	$Pak -y install curl certbot python3-certbot-nginx sqlite3 
 	systemctl daemon-reload && systemctl enable --now nginx
 fi
 systemctl stop nginx 
