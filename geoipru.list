@@ -1,4 +1,4 @@
-# GeoIP list generated on 2025-07-27 08:25:46
+# GeoIP list generated on 2025-07-29 04:12:38
 # Contains data from 3 source files
 
 IP-CIDR,1.2.9.0/24,no-resolve
@@ -18745,6 +18745,8 @@ IP-CIDR,62.105.44.0/22,no-resolve
 IP-CIDR,62.105.48.0/20,no-resolve
 IP-CIDR,62.113.66.0/23,no-resolve
 IP-CIDR,62.113.68.0/24,no-resolve
+IP-CIDR,62.113.71.0/24,no-resolve
+IP-CIDR,62.113.72.0/24,no-resolve
 IP-CIDR,62.113.88.0/24,no-resolve
 IP-CIDR,62.118.0.0/18,no-resolve
 IP-CIDR,62.118.64.0/19,no-resolve
