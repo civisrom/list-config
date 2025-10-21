@@ -1,1 +1,5 @@
-te
+payload:
+  - '+.site.com'
+  - '+.cenred.net'
+  - 'DOMAIN-SUFFIX,needed.org'
+  - 'DOMAIN-KEYWORD,bcked'
