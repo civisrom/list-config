@@ -1,2 +1,4 @@
 payload:
   - DOMAIN-KEYWORD,browserleaks
+  - DOMAIN-KEYWORD,browserscan
+  - DOMAIN-KEYWORD,dnsleaktest
