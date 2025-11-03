@@ -2,3 +2,89 @@ payload:
   - DOMAIN-KEYWORD,browserleaks
   - DOMAIN-KEYWORD,browserscan
   - DOMAIN-KEYWORD,dnsleaktest
+  - DOMAIN-SUFFIX,githubcopilot.com
+  - DOMAIN-SUFFIX,github.dev
+  - DOMAIN-SUFFIX,github.com
+  - DOMAIN-SUFFIX,githubusercontent.com
+  - DOMAIN-SUFFIX,copilot-proxy.githubusercontent.com
+  - DOMAIN-SUFFIX,telemetry.individual.githubcopilot.com
+  - DOMAIN-SUFFIX,main.vscode-cdn.net
+  - DOMAIN-SUFFIX,api.github.com
+  - DOMAIN-SUFFIX,vscode.dev
+  - DOMAIN-SUFFIX,api.individual.githubcopilot.com
+  - DOMAIN-SUFFIX,marketplace.visualstudio.com
+  - DOMAIN-SUFFIX,vscode-cdn.net
+  - DOMAIN-SUFFIX,vscode.microsoft.com
+  - DOMAIN-SUFFIX,code.visualstudio.com
+  - DOMAIN-KEYWORD,copilot
+  - DOMAIN-KEYWORD,vscode
+  - DOMAIN-KEYWORD,github
+  # Microsoft AI
+  - DOMAIN-SUFFIX,copilot.microsoft.com
+  - DOMAIN-SUFFIX,bing.com
+  - DOMAIN-SUFFIX,microsoftcopilot.app
+  - DOMAIN-SUFFIX,sydney.bing.com
+  - DOMAIN-SUFFIX,edgeservices.bing.com
+  - DOMAIN-SUFFIX,copilot.live.com
+  # OpenAI
+  - DOMAIN-SUFFIX,openai.com
+  - DOMAIN-SUFFIX,api.openai.com
+  - DOMAIN-SUFFIX,chat.openai.com
+  - DOMAIN-SUFFIX,chatgpt.com
+  - DOMAIN-SUFFIX,platform.openai.com
+  - DOMAIN-KEYWORD,openai
+  - DOMAIN-KEYWORD,chatgpt
+  # Google AI (Gemini  Bard)
+  - DOMAIN-SUFFIX,gemini.google.com
+  - DOMAIN-SUFFIX,bard.google.com
+  - DOMAIN-SUFFIX,ai.google.dev
+  - DOMAIN-SUFFIX,ai.google.com
+  - DOMAIN-SUFFIX,makersuite.google.com
+  - DOMAIN-SUFFIX,generativeai.google
+  - DOMAIN-SUFFIX,aistudio.google.com
+  - DOMAIN-KEYWORD,gemini
+  - DOMAIN-KEYWORD,bard
+  # Anthropic Claude
+  - DOMAIN-SUFFIX,claude.ai
+  - DOMAIN-SUFFIX,anthropic.com
+  - DOMAIN-SUFFIX,console.anthropic.com
+  - DOMAIN-KEYWORD,claude
+  - DOMAIN-KEYWORD,anthropic
+  # xAI (Grok)
+  - DOMAIN-SUFFIX,x.ai
+  - DOMAIN-SUFFIX,grok.x.ai
+  - DOMAIN-SUFFIX,api.x.ai
+  - DOMAIN-KEYWORD,grok
+  # Perplexity
+  - DOMAIN-SUFFIX,perplexity.ai
+  - DOMAIN-SUFFIX,pplx.ai
+  - DOMAIN-KEYWORD,perplexity
+  # Hugging Face
+  - DOMAIN-SUFFIX,huggingface.co
+  - DOMAIN-SUFFIX,hf.co
+  - DOMAIN-SUFFIX,huggingface.com
+  - DOMAIN-KEYWORD,huggingface
+  # Midjourney  Creative AI
+  - DOMAIN-SUFFIX,midjourney.com
+  - DOMAIN-SUFFIX,cdn.midjourney.com
+  - DOMAIN-KEYWORD,midjourney
+  - DOMAIN-SUFFIX,stability.ai
+  - DOMAIN-SUFFIX,stablediffusionweb.com
+  - DOMAIN-SUFFIX,dreamstudio.ai
+  - DOMAIN-SUFFIX,runwayml.com
+  - DOMAIN-SUFFIX,runway.ml
+  # Character.AI  Others
+  - DOMAIN-SUFFIX,character.ai
+  - DOMAIN-SUFFIX,beta.character.ai
+  - DOMAIN-SUFFIX,replicate.com
+  - DOMAIN-SUFFIX,cohere.ai
+  - DOMAIN-SUFFIX,cohere.com
+  # Development Tools
+  - DOMAIN-SUFFIX,jetbrains.com
+  - DOMAIN-SUFFIX,replit.com
+  - DOMAIN-SUFFIX,repl.it
+  - DOMAIN-SUFFIX,stackoverflow.com
+  - DOMAIN-SUFFIX,docker.com
+  - DOMAIN-SUFFIX,docker.io
+  - DOMAIN-SUFFIX,npmjs.com
+  - DOMAIN-SUFFIX,pypi.org
