@@ -88,3 +88,8 @@ payload:
   - DOMAIN-SUFFIX,docker.io
   - DOMAIN-SUFFIX,npmjs.com
   - DOMAIN-SUFFIX,pypi.org
+  # Инструменты проверки IP
+  - DOMAIN-SUFFIX,ipwho.is
+  - DOMAIN-SUFFIX,api.ip.sb
+  - DOMAIN-SUFFIX,ipapi.co
+  - DOMAIN-SUFFIX,ipinfo.io
