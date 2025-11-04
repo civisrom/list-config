@@ -91,6 +91,6 @@ payload:
   # Инструменты проверки IP
   - DOMAIN-KEYWORD,ipwho
   - DOMAIN-KEYWORD,api.ip.sb
-  - DOMAIN-SUFFIX,.api.ip.sb
   - DOMAIN-KEYWORD,ipapi
+  - DOMAIN-KEYWORD,ip-api
   - DOMAIN-KEYWORD,ipinfo
