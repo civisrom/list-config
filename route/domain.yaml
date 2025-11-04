@@ -97,3 +97,4 @@ payload:
   - DOMAIN-SUFFIX,.ip-api.com
   - DOMAIN-KEYWORD,surfsharkdns
   - DOMAIN-KEYWORD,adspower
+  - DOMAIN-SUFFIX,.ipv4.surfsharkdns.com
