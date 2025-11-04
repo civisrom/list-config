@@ -94,3 +94,4 @@ payload:
   - DOMAIN-KEYWORD,ipapi
   - DOMAIN-KEYWORD,ip-api
   - DOMAIN-KEYWORD,ipinfo
+  - DOMAIN-SUFFIX,.ip-api.com
