@@ -2,6 +2,7 @@ payload:
   - DOMAIN-KEYWORD,browserleaks
   - DOMAIN-KEYWORD,browserscan
   - DOMAIN-KEYWORD,dnsleaktest
+  - DOMAIN-SUFFIX,ntc.party
   - DOMAIN-SUFFIX,githubcopilot.com
   - DOMAIN-SUFFIX,github.dev
   - DOMAIN-SUFFIX,github.com
