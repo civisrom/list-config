@@ -5,6 +5,7 @@ payload:
   - DOMAIN-KEYWORD,veracrypt
   - DOMAIN-KEYWORD,mailfence
   - DOMAIN-SUFFIX,ntc.party
+  - DOMAIN-SUFFIX,crontab.online
   - DOMAIN-SUFFIX,githubcopilot.com
   - DOMAIN-SUFFIX,github.dev
   - DOMAIN-SUFFIX,github.com
