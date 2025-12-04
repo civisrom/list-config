@@ -4,6 +4,7 @@ payload:
   - DOMAIN-KEYWORD,dnsleaktest
   - DOMAIN-KEYWORD,veracrypt
   - DOMAIN-KEYWORD,mailfence
+  - DOMAIN-KEYWORD,qbittorrent
   - DOMAIN-SUFFIX,ntc.party
   - DOMAIN-KEYWORD,ntc
   - DOMAIN-SUFFIX,crontab.online
