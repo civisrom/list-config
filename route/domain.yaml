@@ -5,7 +5,9 @@ payload:
   - DOMAIN-KEYWORD,veracrypt
   - DOMAIN-KEYWORD,mailfence
   - DOMAIN-KEYWORD,qbittorrent
+  - DOMAIN-KEYWORD,fitgirl
   - DOMAIN-SUFFIX,ntc.party
+  - DOMAIN-SUFFIX,fitgirl-repacks.site
   - DOMAIN-KEYWORD,ntc
   - DOMAIN-SUFFIX,crontab.online
   - DOMAIN-SUFFIX,githubcopilot.com
