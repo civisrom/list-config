@@ -1,6 +1,7 @@
 payload:
   - DOMAIN-KEYWORD,browserleaks
   - DOMAIN-KEYWORD,browserscan
+  - DOMAIN-SUFFIX,aida64russia.com
   - DOMAIN-KEYWORD,dnsleaktest
   - DOMAIN-KEYWORD,veracrypt
   - DOMAIN-KEYWORD,mailfence
