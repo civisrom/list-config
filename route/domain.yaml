@@ -1,6 +1,8 @@
 payload:
   - DOMAIN-KEYWORD,browserleaks
   - DOMAIN-KEYWORD,browserscan
+  - DOMAIN-KEYWORD,tmdb
+  - DOMAIN-SUFFIX,tmdb.org
   - DOMAIN-KEYWORD,aida64
   - DOMAIN-KEYWORD,debian
   - DOMAIN-KEYWORD,sourceforge
