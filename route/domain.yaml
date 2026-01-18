@@ -2,6 +2,7 @@ payload:
   - DOMAIN-KEYWORD,browserleaks
   - DOMAIN-KEYWORD,browserscan
   - DOMAIN-KEYWORD,tp-link
+  - DOMAIN-KEYWORD,ventusky
   - DOMAIN-KEYWORD,tmdb
   - DOMAIN-SUFFIX,tmdb.org
   - DOMAIN-KEYWORD,aida64
