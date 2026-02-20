@@ -120,7 +120,7 @@ DOMAIN-SUFFIX,user.auth.xboxlive.com
 DOMAIN-SUFFIX,xsts.auth.xboxlive.com
 # news
 DOMAIN-SUFFIX,ntc.party
-#test
+# test
 DOMAIN-KEYWORD,dnscheck
 DOMAIN-KEYWORD,browserscan
 DOMAIN-KEYWORD,browserleaks
