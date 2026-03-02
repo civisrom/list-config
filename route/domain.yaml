@@ -12,6 +12,7 @@ payload:
   - DOMAIN-KEYWORD,greenend
   - DOMAIN-SUFFIX,aida64russia.com
   - DOMAIN-SUFFIX,chiark.greenend.org.uk
+  - DOMAIN-SUFFIX,the.earth.li
   - DOMAIN-KEYWORD,dnsleaktest
   - DOMAIN-KEYWORD,veracrypt
   - DOMAIN-KEYWORD,mailfence
