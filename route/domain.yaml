@@ -9,6 +9,7 @@ payload:
   - DOMAIN-KEYWORD,debian
   - DOMAIN-KEYWORD,sourceforge
   - DOMAIN-KEYWORD,callfilter
+  - DOMAIN-KEYWORD,greenend
   - DOMAIN-SUFFIX,aida64russia.com
   - DOMAIN-SUFFIX,chiark.greenend.org.uk
   - DOMAIN-KEYWORD,dnsleaktest
